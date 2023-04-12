@@ -1,0 +1,14 @@
+@mixin moveImage {
+    width: 15%;
+    height: 50%;
+    font-size: 2vw;
+    border-radius: 20px;
+    margin-top: 3%;
+    @content;
+}
+
+@mixin createSection {
+    width: 100%;
+    display: flex;
+    @content;
+}

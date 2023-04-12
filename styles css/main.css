@@ -1,0 +1,317 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main_article {
+  width: 25%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1%;
+  border-radius: 20px;
+  box-shadow: 4px 3px 1px grey;
+  margin: 0.5%;
+}
+.main_article:hover {
+  animation: bounce 1s linear;
+}
+.main_article:active {
+  background-color: rgb(127, 127, 127);
+}
+.main_article_image {
+  width: 60%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.pokemon_name {
+  font-size: 4vw;
+}
+
+.pokemon_type-0,
+.pokemon_type-1 {
+  margin-top: 5%;
+  font-size: 2vw;
+  padding: 2% 5%;
+  border-radius: 30px;
+  color: white;
+}
+
+.extra_information {
+  width: 20%;
+  height: 80vh;
+  position: absolute;
+  z-index: 20;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inside_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  height: 20%;
+}
+
+.previous_image {
+  width: 15%;
+  height: 50%;
+  font-size: 2vw;
+  border-radius: 20px;
+  margin-top: 3%;
+  border: 2px solid black;
+}
+.previous_image:active {
+  background-color: rgb(134, 132, 132);
+}
+
+.next_image {
+  width: 15%;
+  height: 50%;
+  font-size: 2vw;
+  border-radius: 20px;
+  margin-top: 3%;
+  border: 2px solid black;
+}
+.next_image:active {
+  background-color: rgb(134, 132, 132);
+}
+
+.inf_image {
+  width: 60%;
+  height: 65%;
+  margin-top: 20%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.inside_div {
+  width: 60%;
+  height: 100%;
+  background-image: url("https://wallpapercave.com/wp/wp1902719.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.inner_pokemon_name {
+  font-size: 2vw;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+}
+
+.inside_section-2 {
+  width: 100%;
+  display: flex;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inner_pokemon_type-0, .inner_pokemon_type-1 {
+  font-size: 1.5vw;
+  width: 30%;
+  height: 50%;
+  border: 2px solid black;
+  border-radius: 30px;
+  color: white;
+  text-align: center;
+}
+
+.pokemon_information {
+  font-size: 1.5vw;
+  align-self: baseline;
+  margin-bottom: 5%;
+}
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-10px);
+    box-shadow: 8px 3px 9px black;
+  }
+  40% {
+    transform: translateY(0px);
+    box-shadow: 4px 3px 1px grey;
+  }
+  60% {
+    transform: translateY(-2px);
+    box-shadow: 5px 3px 3px grey;
+  }
+  80% {
+    transform: translateY(0px);
+    box-shadow: 4px 3px 1px grey;
+  }
+}
+.section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 18%;
+}
+
+.h1 {
+  font-size: 10vw;
+  text-align: center;
+}
+
+.search {
+  width: 25%;
+  height: 7vh;
+  font-size: 2vw;
+  text-align: center;
+  margin-top: 3%;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/736x/0f/2f/83/0f2f83d83923c550bbea1f8439b5b1c4.jpg");
+}/*# sourceMappingURL=main.css.map */
